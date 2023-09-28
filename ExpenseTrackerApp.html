@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html lan ="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>EXPENSE TRACKER APP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>EXPENSE TRACKER</h1>
+            </header>
+            <section class="container"> 
+                <form id="my-form">
+                    <div class="msg"> </div>
+                    <div>
+                        <label for="expense">Expense:</label>
+                        <input type="text" id="expense">
+                    </div>
+                    <div>
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount">
+                    </div>
+                    <div>
+                        <label for="category">Category:</label>
+                        <select id="category" required>
+                            <optgroup label="Select a Category">
+                                <option value="food">Food</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="entertainment">Entertainment</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+
+                <ul id="expense-list"></ul>
+                <!-- <ul class="items">
+                    <li class="item">Item 1</li>
+                    <li class="item">Item 2</li>
+                    <li class="item">Item 3</li>
+                </ul> -->
+            </section>
+            <script src="Expense tracker app.js"></script>
+    </body>
+</html>
